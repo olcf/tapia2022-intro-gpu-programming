@@ -518,7 +518,7 @@ $ squeue submit.sh
 
 5) If the new stdout file reports `__SUCCESS__`, you have correctly added the missing calculations.
 
-### Exercise 3: 
+### Exercise 3: Complete the Data Transfers
 
 In this exercise, you are given a program that computes the average value of each element of an array (where the average is calculated from the element and its 3 neighbors on both sides - so 7 elements total are used in the average). However, the CUDA API calls for performing the data transfers (1 from the CPU to the GPU and 1 from the GPU to the CPU) are incomplete. Your task is to add in the correct CPU and GPU buffers.
 
@@ -543,6 +543,8 @@ $ squeue submit.sh
 ```
 
 5) If the new stdout file reports `__SUCCESS__`, you have correctly added the missing arguments (buffers).
+
+In addition to the complete-the-data-transfers task, this program also shows a comparison of CPU vs GPU performace. It mimics a more realistic application by performing a stencil operation (i.e., using multiple contiguous array elements, rather than just single element like all previous examples/exercises) over multiple time steps. 
 
 ## Where to Go From Here?
 
